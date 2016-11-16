@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="codes.simen.mapmessage.MapActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button2"
+        android:onClick="onSendClicked"
+        android:drawableLeft="@android:drawable/ic_menu_send" />
+</RelativeLayout>
