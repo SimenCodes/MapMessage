@@ -11,4 +11,6 @@ For å bruke appen må telefonen få en sms som inneholder følgende
 - En melding, kan inneholde alt
 - Et koordinat lat,long,radius i meter,fargekode (10.21,11.34,30,120)
 
+Om du vil bruke appen med Huawei må du legge den til i beskyttede apper telefonbehandlingsappen
+
 Laget av Simen Burud, Håvard Farestveit og Even Klemsdal
