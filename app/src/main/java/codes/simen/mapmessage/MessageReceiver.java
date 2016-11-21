@@ -41,11 +41,16 @@ public class MessageReceiver extends BroadcastReceiver {
 
             fullMessage = fullMessage.trim();
 
-            context.startActivity(new Intent(context, MapActivity.class)
-                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                    .putExtra("from", from)
-                    .putExtra("message", fullMessage)
-            );
+            try {
+                new LocationMessage(from, fullMessage);
+                context.startActivity(new Intent(context, MapActivity.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        .putExtra("from", from)
+                        .putExtra("message", fullMessage)
+                );
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
     }
